@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');sd
+
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --dark: #090909;
+    --light: #C9CEBD;
+    --accent1: #A32900;
+    --accent1dark: #570000;
+    --accent2: #6699CC;
+  }
+
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--dark);
+  }
+
+  html {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+  }
+
+  section .content{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
+
+
+  .floating-menu {
+    font-family: sans-serif;
+    padding: 5px;
+    width: 130px;
+    z-index: 100;
+    position: fixed;
+    left:3%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    align-items: center;
+  }
+
+  .floating-menu a{
+    display: inline-block;  
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .floating-menu a:link{
+    text-decoration:none;
+    color: var(--accent1);
+  }
+
+  .floating-menu a:visited{
+    color: var(--accent1);
+  }
+
+  .floating-menu a:hover{
+    color: var(--accent1dark);
+  }
+
+  .heading {  
+    left:3%;
+    padding: 2%;
+    z-index: 100;
+    position: fixed;
+    top: 10%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .shine{
+    font-family: 'Secular One';
+    position: absolute;
+    padding: 12px 48px;
+    transform: translateX(-15%);
+    color: #ffffff;
+    background: linear-gradient(to right, var(--accent1) 0, var(--accent1dark) 10%, var(--accent1) 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+   
+  @keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 180px;
+  }
+  100%{
+    background-position: 180px;
+  }
+}
+
