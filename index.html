@@ -10,8 +10,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
-
       </head>
     <body onload="onLoad()">
 
@@ -41,89 +42,222 @@
 </svg></a><br>
           </nav>
 
-          <div class="heading">
-         </div>
 
-
-        <a id="home">
+        
         <section id="sec1">
+          <a id="home"></a>
           <div class="content">
           <h1>Home</h1>
          </div>
         </section>
-        </a>
 
 
-        <a id="about">
-            <section id="sec2">
-              <div class="content"> <h1>About</h1></div>
-            </section>
-        </a>
-        <a id="education">
-          <section id="sec3">
+        
+        <section id="sec2">
+          <a id="about"></a>
+          <div class="content"> <h1>About</h1></div>
+        </section>
+       
+          <section id="sec3"> 
+            <a id="education"></a>
             <div class="content">
               <h1>Education</h1>
               <div class="parent">
-                <div>
-                  <h2>Oatlands College</h2>
-                  <h3>Leaving Certificate 2018-2020</h3>
-                  <ul>
-                    <li>Obtained 625 points</li>
-                    <li>Achieved H1's (over 90%) in:</li>
+                  <div>
+                    <h2>Oatlands College</h2>
+                    <h3>Leaving Certificate 2018-2020</h3>
                     <ul>
-                      <li>Mathematics</li>
-                      <li>Applied Mathematics</li>
-                      <li>Physics</li>
-                      <li>Chemistry</li>
-                      <li>Music</li>
-                      <li>French</li>
+                      <li>Obtained 625 points</li>
+                      <li>Achieved H1's (over 90%) in:</li>
+                      <ul>
+                        <li>Mathematics</li>
+                        <li>Applied Mathematics</li>
+                        <li>Physics</li>
+                        <li>Chemistry</li>
+                        <li>Music</li>
+                        <li>French</li>
+                      </ul>
+                      <br>
+                      <li>Recieved an academic award upon graduation</li>
+                      <li>Recieved a leadership award for contribution to the school</li>
                     </ul>
-                    <li>Recieved an academic award upon graduation</li>
-                    <li>Recieved a leadership award for contribution to the school</li>
-                  </ul>
-                  </p>
-                </div>
-                <div>
-                  <h2>University College Dublin</h2>
-                  <h3>Bachelors of Electronic Engineering 2020-2024</h3>
-                  <ul>
-                  <li>GPA of 4.04 (out of 4.2)</li>
-                  <li>See all modules and results</li>
-                  <li>Obtained the highest GPA out of 330 students in Stage 1</li>
-                  <li>Accepted into the Ad Astra Academy, as an Academic Excellence Scholar</li>
-                  <li>Was awarded the Stage 2 Engineering scholarship</li>
-                  <li>Awarded the second prize in the NUI Pierce Malone Scholarship in Engineering</li></ul>
+                    </p>
+                  </div>
+                  <div>
+                    <h2>University College Dublin</h2>
+                    <h3>Bachelors of Electronic Engineering 2020-2024</h3>
+                    <ul>
+                    <li>GPA of 4.04 (out of 4.2)</li>
+                    <li>See all <a data-bs-toggle="modal" data-bs-target="#gradesModal" id="gradesLink">modules and results</a></li>
+                    <br>
+                    <li>Obtained the highest GPA out of 330 students in Stage 1</li>
+                    <li>Accepted into the Ad Astra Academy, as an Academic Excellence Scholar</li>
+                    <li>Was awarded the Stage 2 Engineering scholarship</li>
+                    <li>Awarded the second prize in the NUI Pierce Malone Scholarship in Engineering</li></ul>
+                    <br>
+                    <li>Robotics Club Project Manager 2021, 2022</li>
+                    <li>Secretary of the Electrical and Electronic Engineering Society 2022, 2023</li>
+                  </div>
+              </div>
+
+              <div class="modal fade" id="gradesModal" tabindex="-1" aria-labelledby="gradesModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modules and Grades</h1>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                      <div class="parent evenly">
+                        <div>
+                          <h4>Stage 1</h4>
+                          <table>
+                            <tbody>
+                            <tr>
+                            <td>Linear Algebra for Engineers</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Calculus for Engineers</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Physics for Engineers 1</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Physics for Engineers 2</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Chemistry for Engineers</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Mechanics for Engineers</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Energy Engineering</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Electronic Engineering 1</td>
+                            <td>A-</td>
+                            </tr>
+                            <tr>
+                            <td>Engineering Computing</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Computer Science for Engineers 1</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Creativity in Design</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>The Engineering and Architecture of Structures</td>
+                            <td>A</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+
+                        <div>
+                          <h4>Stage 2</h4>
+                          <table>
+                            <tbody>
+                            <tr>
+                            <td>Multivariable Calculus for Engineers 1</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Statistics & Probability</td>
+                            <td>A-</td>
+                            </tr>
+                            <tr>
+                            <td>Solid State Devices</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Electrical & Electronic Circuits</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Electronic Circuits</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Electromagnetic Fields</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Electrical Energy Systems</td>
+                            <td>B</td>
+                            </tr>
+                            <tr>
+                            <td>Digital Electronics</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Computer Engineering</td>
+                            <td>A+</td>
+                            </tr>
+                            <tr>
+                            <td>Communication Systems</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>UNIX Programming</td>
+                            <td>A</td>
+                            </tr>
+                            <tr>
+                            <td>Computer Graphics</td>
+                            <td>A+</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              </div>
+            </div>
           </section>
-        </a>
         <a id="skills">
           <section id="sec4">
             <div class="content"> <h1>Skills</h1></div>
              
           </section>
         </a> 
-        <a id="work">
-          <section id="sec5">
+      
+          <section id="sec5"> 
+            <a id="work"></a>
             <div class="content">
             <h1>Work</h1></div>
           </section>
-        </a>
-        <a id="projects">
-          <section id="sec6">
+
+      
+          <section id="sec6">  
+            <a id="projects"></a>
             <div class="content">
               <h1>Projects</h1></div>
           </section>
-        </a>
        
-        <a id="contact">
-          <section id="sec7">
+      
+          <section id="sec7">  
+            <a id="contact"></a>
             <div class="content">
             <h1>Contact</h1></div>
           </section>
-        </a>
+
         <script src="script.js" async defer></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
     </body>
 </html>

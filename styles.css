@@ -7,6 +7,7 @@
   :root {
     --dark: #090909;
     --light: #C9CEBD;
+    --dkgrey: #090909;
     --accent1: #A32900;
     --accent1dark: #570000;
     --accent2: #6699CC;
@@ -19,10 +20,10 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--dark);
     color: var(--light);
+    font-family: 'Secular One', sans-serif;
   }
 
   html {
-    font-family: 'Secular One', sans-serif;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -95,6 +96,7 @@
     color: #ffffff;
     background: linear-gradient(to right, var(--accent1) 0, var(--accent1dark) 10%, var(--accent1) 20%);
     background-position: 0;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
@@ -128,10 +130,12 @@ h1{
   font-size: 400%;
   margin: 0;
   margin-left: 3%;
+  margin-bottom: 3%;
 }
 
 h3{
-  color: var(--light);
+  color: var(--accent1dark);
+  margin-bottom: 5%;
 }
 
 .parent{
@@ -146,4 +150,55 @@ h3{
   margin-left:3%;
   text-align: left;
   height: 100%;
+}
+
+#gradesLink{
+  color:var(--accent1);
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.around{
+  justify-content: space-around;
+}
+
+.evenly{
+  justify-content: space-evenly;
+}
+
+.modal-dialog {
+  width: fit-content;
+  max-width: 80%;
+}
+
+.modal-dialog td{
+  padding-right: 5%;
+  vertical-align: top;
+}
+
+.modal-dialog h4{
+  color: var(--accent1);
+}
+
+.modal-content{
+  background-color: var(--dkgrey);
+}
+
+.modal-dialog .parent div{
+  margin: 0% 5%;
+}
+
+h1.modal-title{
+  margin-top: 1%;
+  color: var(--light);
+}
+
+.modal-header{
+  border:none;
+}
+
+.modal-content hr{
+  margin:0%;
 }
