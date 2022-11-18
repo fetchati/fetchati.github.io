@@ -18,10 +18,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--dark);
+    color: var(--light);
   }
 
   html {
-    font-family: sans-serif;
+    font-family: 'Secular One', sans-serif;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -31,18 +32,16 @@
   section {
     height: 100vh;
     scroll-snap-align: start;
-    text-align: center;
     position: relative;
   }
 
   section .content{
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    width: 100%;
-    left: 0;
+    /* background-color: white; */
+    position: relative;
+    height: 70%;
+    width: 70%;
+    top: 15%;
+    left: 15%;
   }
 
 
@@ -119,3 +118,32 @@
   }
 }
 
+h2 {
+  color: var(--accent1);
+  margin-bottom:0;
+}
+
+h1{
+  color: var(--light);
+  font-size: 400%;
+  margin: 0;
+  margin-left: 3%;
+}
+
+h3{
+  color: var(--light);
+}
+
+.parent{
+  display: flex;
+  /* background-color: palegoldenrod; */
+  position: relative;
+  height: 70%;
+}
+
+.parent div{
+  /* background-color: paleturquoise; */
+  margin-left:3%;
+  text-align: left;
+  height: 100%;
+}
