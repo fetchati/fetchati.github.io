@@ -4,14 +4,14 @@ document.addEventListener('scroll', onScroll);
 function onScroll(event){
     getSection();
     if (section != last_section){
-        updateColors();
+        pageChange();
     }
 }
 
 function onLoad(){
     last_section = 0;
     getSection();
-    updateColors();
+    pageChange();
 }
 
 function getSection(){
@@ -19,13 +19,13 @@ function getSection(){
     section = Math.round(window.pageYOffset/window.innerHeight);
 }
 
-function updateColors(event) {
+function pageChange(event) {
     console.log("updating colors");
-    colorLinks();
+    updateColors();
 }
 
 
-function colorLinks(){
+function updateColors(){
     links = document.querySelectorAll("#navbar > a");
 
     for(element of links.values()){
