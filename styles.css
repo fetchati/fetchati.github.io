@@ -34,10 +34,17 @@
     height: 100vh;
     scroll-snap-align: start;
     position: relative;
+    overflow-y:scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  section::-webkit-scrollbar {
+    display: none;
   }
 
   section .content{
-    /* background-color: white; */
+    max-height: 80%;
     position: relative;
     width: 70%;
     top: 50%;
