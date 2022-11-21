@@ -20,8 +20,7 @@
     background-color: var(--dark);
     color: var(--light);
     font-family: 'Secular One', sans-serif;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
   }
 
   html {
@@ -40,10 +39,11 @@
   section .content{
     /* background-color: white; */
     position: relative;
-    height: 70%;
     width: 70%;
-    top: 15%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15%;
+    margin-left: 3%;
   }
 
 
@@ -74,6 +74,7 @@
   .floating-menu a:visited{
     color: var(--accent1);
   }
+
 
   .floating-menu a:hover{
     color: var(--accent1dark);
@@ -130,7 +131,6 @@ h1{
   color: var(--light);
   font-size: 400%;
   margin: 0;
-  margin-left: 3%;
   margin-bottom: 3%;
 }
 
@@ -140,8 +140,14 @@ h3{
 }
 
 
-h6{
+h4{
   color: var(--accent1);
+}
+
+h5{
+  color: var(--accent1dark);
+  font-size:medium;
+  padding-top: none;
 }
 
 .parent{
@@ -153,10 +159,18 @@ h6{
 
 .parent div{
   /* background-color: paleturquoise; */
-  margin-left:3%;
   text-align: left;
   height: 100%;
 }
+
+.ml-3{
+  margin-left: 3%;
+}
+
+.mw-30{
+  max-width: 30%;
+}
+
 
 #gradesLink{
   color:var(--accent1);
@@ -212,4 +226,19 @@ h1.modal-title{
 
 .modal-content hr{
   margin:0%;
+}
+
+li{
+  width: fit-content;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: black;
+  --bs-tooltip-color: var(--light);
+  --bs-tooltip-opacity: 70%;
+  --bs-tooltip-max-width: none;
+}
+
+.half{
+  max-width: 45%;
 }
