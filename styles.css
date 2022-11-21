@@ -152,13 +152,11 @@ h5{
 
 .parent{
   display: flex;
-  /* background-color: palegoldenrod; */
   position: relative;
   height: 70%;
 }
 
 .parent div{
-  /* background-color: paleturquoise; */
   text-align: left;
   height: 100%;
 }
@@ -241,4 +239,57 @@ li{
 
 .half{
   max-width: 45%;
+}
+
+#fragment1
+{
+		    -webkit-animation: frag 20s steps(50, end) 0s infinite;
+		    animation: frag 20s steps(50, end) 0s infinite;
+}
+
+#fragment2
+{
+		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
+		    animation: frag 20s steps(50, end) 5s infinite;
+}
+
+#fragment3
+{
+		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
+		    animation: frag 20s steps(50, end) 10s infinite;
+}
+
+#fragment4
+{
+		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
+		    animation: frag 20s steps(50, end) 15s infinite;
+}
+
+.fragment{
+  color:var(--accent1dark);
+  display:inline-block;
+  vertical-align: bottom;
+  white-space:nowrap;
+  overflow:hidden;
+  width:0;
+}
+
+@keyframes frag{
+		    
+  from { width: 0;}
+  10%{width:80%;}
+  20%{width:0;}
+  100%{width:0;}
+}
+
+@-webkit-keyframes frag{
+  from { width: 0;}
+  10%{width:80%;}
+  20%{width:0;}
+  100%{width:0;}
+}
+
+.title{
+  color: var(--light);
+  font-size: 500%;
 }
