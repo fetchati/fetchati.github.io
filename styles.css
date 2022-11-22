@@ -250,26 +250,32 @@ li{
 
 #fragment1
 {
-		    -webkit-animation: frag 20s steps(50, end) 0s infinite;
-		    animation: frag 20s steps(50, end) 0s infinite;
+		    -webkit-animation: frag 25s steps(50, end) 0s infinite;
+		    animation: frag 25s steps(50, end) 0s infinite;
 }
 
 #fragment2
 {
-		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
-		    animation: frag 20s steps(50, end) 5s infinite;
+		    -webkit-animation: frag 25s steps(50, end) 5s infinite;
+		    animation: frag 25s steps(50, end) 5s infinite;
 }
 
 #fragment3
 {
-		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
-		    animation: frag 20s steps(50, end) 10s infinite;
+		    -webkit-animation: frag 25s steps(50, end) 5s infinite;
+		    animation: frag 25s steps(50, end) 10s infinite;
 }
 
 #fragment4
 {
-		    -webkit-animation: frag 20s steps(50, end) 5s infinite;
-		    animation: frag 20s steps(50, end) 15s infinite;
+		    -webkit-animation: frag 25s steps(50, end) 5s infinite;
+		    animation: frag 25s steps(50, end) 15s infinite;
+}
+
+#fragment5
+{
+		    -webkit-animation: frag 25s steps(50, end) 5s infinite;
+		    animation: frag 25s steps(50, end) 20s infinite;
 }
 
 .fragment{
@@ -299,4 +305,120 @@ li{
 .title{
   color: var(--light);
   font-size: 500%;
+}
+
+.project{
+  height: 60vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.linkedin_badge{
+  width: 330px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.linkedin_header {
+  background-color: #38434f;
+  padding: 12px 20px;
+  
+}
+
+.linkedin_header svg{
+  width:84px;
+  color: white;
+}
+
+.linkedin_body{
+  text-align: center;
+  background-color: #000;
+  color:white;
+  padding: 20px 20px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+}
+
+.linkedin_body img{
+  margin:auto;
+  display:block;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.linkedin_body .name{ 
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  padding:5px 0;
+  font-size: medium;
+}
+
+.linkedin_body p{
+  font-size: small;
+  text-align: center;
+}
+
+.linkedin_body p a{
+  color:white;
+}
+
+.linkedin_body .btn{
+  margin:auto;
+  border-radius: 24px;
+  padding: 3px 16px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  color:white;
+  border-color: white;
+  font-family: inherit;
+}
+
+.contactform{
+  width: 40%;
+  margin-right: 20%;
+}
+
+.contactform input{
+  all:inherit;
+  color: var(--light);
+  width: 100%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #666;
+}
+
+.contactform input:focus{
+border-bottom: 1px solid #fff;
+}
+
+.contactform textarea{
+  all:inherit;
+  width: 100%;
+  resize: vertical;
+  word-wrap: break-word;
+  overflow: auto;
+  min-height: 15vh;
+  border-bottom: 1px solid #666;
+  margin-bottom: 5%;
+}
+
+.clean_btn{
+    all:inherit;
+  color: var(--accent1);
+}
+
+.clean_btn:hover{
+  color: var(--accent1dark);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill::first-line{
+  width: 100%;
+  font-family: 'Secular One', sans-serif;
+  -webkit-text-fill-color: var(--light);
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
