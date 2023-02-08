@@ -240,7 +240,7 @@ li{
 .custom-tooltip {
   --bs-tooltip-bg: black;
   --bs-tooltip-color: var(--light);
-  --bs-tooltip-opacity: 70%;
+  --bs-tooltip-opacity: 90%;
   --bs-tooltip-max-width: none;
 }
 
@@ -421,4 +421,12 @@ input:-webkit-autofill::first-line{
   -webkit-text-fill-color: var(--light);
   -webkit-box-shadow: 0 0 0px 1000px var(--dark) inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+
+
+#sec4 ul{
+  padding-left: 1rem;
 }

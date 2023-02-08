@@ -44,3 +44,4 @@ function updateColors(){
       case 6: document.getElementById("contactlink").style.color="var(--accent1dark)"; return;
     }
 }
+
